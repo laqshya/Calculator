@@ -1,0 +1,47 @@
+﻿<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="calculator">
+
+<input type="text"  id="calculator-screen" style="position:absolute; left:302px; top:57px;" value="" disabled/><br></br>
+<div class="calculator-keys">
+<button class="operator" type="button"  style = "position:absolute; left:522px; top:330px;" value="+">+</button>
+<button class="operator" type="button"  style = "position:absolute; left:522px; top:280px;" value="-">-</button>
+<button class="operator" type="button"  style = "position:absolute; left:522px; top:230px;" value="*">*</button>
+<button class="operator" type="button"  style = "position:absolute; left:522px; top:180px;" value="/">/</button>
+<button class="decimal" type="button"  style = "position:absolute; left:302px; top:330px;" value=".">.</button>
+<button class="equal-sign operator" type="button"  style = "position:absolute; left:402px; top:330px;" value="=">=</button>
+<button class="all-clear" type="button" style = "position:absolute; left:519px; top:130px;"value="all-clear">AC</button>
+<button class="b1" type="button" onclick="ans.value+='%'" style = "position:absolute; left:402px; top:130px;">%</button>
+<button class="b1" type="button" onclick="ans.value+=')'" style = "position:absolute; left:302px; top:130px;">)</button>
+<button class="b1" type="button" onclick="ans.value+='('" style = "position:absolute; left:202px; top:130px;">(</button>
+<button class="b1" type="button" onclick="ans.value=fact(ans.value)" style = "position:absolute; left:102px; top:130px;">x!</button>
+<button class="b1" type="button" onclick="ln()" style = "position:absolute; left:100px; top:180px;">ln</button>
+<button class="b2" type="button" onclick="log()" style = "position:absolute; left:100px; top:230px;">log10</button>
+<button class="b2" type="button" onclick="sqrt()" style = "position:absolute; left:100px; top:280px;">sqrt</button>
+<button class="b1" type="button" onclick="sqr()" style = "position:absolute; left:100px; top:330px;">^2</button>
+<button class="a1" type="button"  style = "position:absolute; left:202px; top:330px;" value="0">0</button>
+<button class="a1" type="button"  style = "position:absolute; left:202px; top:280px;" value="1">1</button>
+<button class="a1" type="button"  style = "position:absolute; left:202px; top:230px;" value="4">4</button>
+<button class="a1" type="button"  style = "position:absolute; left:202px; top:180px;" value="7">7</button>
+
+<button class="a1" type="button"  style = "position:absolute; left:302px; top:280px;" value="2">2</button>
+<button class="a1" type="button"  style = "position:absolute; left:302px; top:230px;" value="5">5</button>
+<button class="a1" type="button"  style = "position:absolute; left:302px; top:180px;" value="8">8</button>
+<button class="a1" type="button"  style = "position:absolute; left:402px; top:180px;" value="9">9</button>
+<button class="a1" type="button"  style = "position:absolute; left:402px; top:230px;" value="6">6</button>
+<button class="a1" type="button"  style = "position:absolute; left:402px; top:280px;" value="3">3</button>
+
+<button class="s2" type="button" onclick="ans.value+='Rad|Deg'" style = "position:absolute; left:102px; top:87px;">Rad | Deg</button>
+<button class="b2" type="button" onclick="mysin()" style = "position:absolute; left:100px; top:380px;">sin</button>
+<button class="b2" type="button" onclick="mycos()" style = "position:absolute; left:202px; top:380px;">cos</button>
+<button class="b2" type="button" onclick="mytan()" style = "position:absolute; left:302px; top:380px;">tan</button>
+<button class="b2" type="button" onclick="pie()" style = "position:absolute; left:402px; top:380px;">pie</button>
+</div>
+</div>
+
+</body>
+<script src="newcal.js"></script>
+</html>
